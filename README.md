@@ -1,4 +1,4 @@
-# Simulacão de Monte Carlo em Açoes do Itau
+# Simulacão de Monte Carlo em Açoes do Itau em python
 
 A simulação de Monte Carlo é uma das ferramentas mais utilizadas por analistas e especialistas financeiros em todo o mercado financeiro.
 
