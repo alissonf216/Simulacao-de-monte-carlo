@@ -10,10 +10,10 @@ import matplotlib.pyplot as plt
 plt.style.use('fivethirtyeight')
 
 #EU IA FAZER O TREM PARA FICAR RELENDO OS DIAS ATUAIS SEMPRE MAIS VOU DEIXR PRO PROXIMO
-#start = dt.datetime(2017, 01, 03)
-#end = dt.datetime(2017, 11, 20)
+#start = dt.datetime(2012, 01, 01)
+#end = dt.datetime(2020, 02, 26)
 
-precos = web.DataReader('AAPL', data_source='yahoo', start='2012-01-01', end='2020-02-03')['Close']
+precos = web.DataReader('ITUB4.SA', data_source='yahoo', start='2012-01-01', end='2020-02-26')['Close']
 returns = precos.pct_change()
 
 ultimo_preco = precos[-1]
@@ -44,7 +44,7 @@ for x in range(num_simulacoes):
     
 fig = plt.figure()
 plt.figure(figsize=(18,8))
-plt.title('Simulação de Monte Carlo : ')
+plt.title('Simulação de Monte Carlo : ITUB4.SA ')
 plt.plot(simulacao_df)
 plt.axhline(y = ultimo_preco, color = 'r', linestyle = '-')
 plt.xlabel('Dia')
